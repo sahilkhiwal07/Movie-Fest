@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Movie Database</string>
+
+    <string name="movie_title">Movie Title</string>
+    <string name="movie_language">Movie Language</string>
+    <string name="movie_votes">Movie Votes</string>
+
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/singleItems"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_margin="3dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/movieImage"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            android:clickable="false"
+            android:focusable="false"
+            android:src="@drawable/rashi" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/movieTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/movie_title"
+                android:textSize="18sp"
+                android:fontFamily="@font/r_bold"
+                android:clickable="false"
+                android:focusable="false" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/itemText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Language :"
+                android:layout_below="@+id/movieTitle"
+                android:textSize="16sp"
+                android:fontFamily="@font/r_new"
+                android:layout_margin="5dp"
+                android:clickable="false"
+                android:focusable="false"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/movieLanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/movie_language"
+                android:layout_toRightOf="@+id/itemText"
+                android:layout_below="@+id/movieTitle"
+                android:textSize="16sp"
+                android:fontFamily="@font/r_new"
+                android:layout_margin="5dp"
+                android:clickable="false"
+                android:focusable="false"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/itemText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ratings :"
+                android:layout_below="@+id/movieLanguage"
+                android:textSize="14sp"
+                android:fontFamily="@font/r_new"
+                android:layout_margin="5dp"
+                android:clickable="false"
+                android:focusable="false"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/movieVote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/movie_votes"
+                android:layout_below="@+id/movieLanguage"
+                android:layout_toRightOf="@id/itemText2"
+                android:textSize="14sp"
+                android:fontFamily="@font/r_new"
+                android:layout_margin="5dp"
+                android:clickable="false"
+                android:focusable="false"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/favourite"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_heart"
+                android:layout_alignParentRight="true"
+                android:layout_margin="20dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
